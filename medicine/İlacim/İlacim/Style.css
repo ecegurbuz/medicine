@@ -1,0 +1,202 @@
+﻿body {
+    background-color: white;
+    border-top: 4px solid purple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+#wrapper {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 150px;
+}
+
+    header .logo {
+        float: left;
+        width: 100px;
+        height: 45px;
+        font-family: 'Lucida Handwriting';
+        border-right: 1px solid white;
+        text-align: center;
+        line-height: 45px;
+        background-color: white;
+        color: purple;
+        font-size: 40px;
+    }
+
+        header .logo ul {
+            list-style: none;
+        }
+
+            header .logo ul li a {
+                text-decoration: none;
+            }
+
+
+    header .arama-wrap {
+        position: relative;
+        float: left;
+        border-radius: 5px;
+        margin: 15px 0 0 25px;
+        height: 29px;
+        line-height: 29px;
+        margin-left: 300px;
+        margin-right: 50px;
+    }
+
+        header .arama-wrap .txtArama {
+            float: left;
+            font-size: 14px;
+            border: 1px solid purple;
+            border-radius: 5px 0 0 5px;
+            height: 29px;
+            line-height: 29px;
+            background-color: #fff;
+            padding-top: 0;
+            padding-bottom: 0;
+            width: 270px;
+        }
+
+
+        header .arama-wrap .butonArama {
+            height: 31px;
+            line-height: 29px;
+            border: 0 none;
+            background-color: purple;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            padding: 0 8px;
+            width: auto;
+        }
+
+
+
+header #alt-nav {
+    width: 100%;
+    border-right: 1px solid white;
+    background-color: white;
+    line-height: 50px;
+    float: left;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+    header #alt-nav ul {
+        list-style: none;
+        height: 41px;
+        line-height: 36px;
+        flex-basis: 85%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-left: -6px;
+    }
+
+        header #alt-nav ul li {
+            float: left;
+            margin-left: -5px;
+            color: purple;
+            font-size: large;
+            font-family: Helvetica;
+            margin: 0;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+            padding: 0 20px;
+            transition: all .2s ease-in-out;
+            width: 10px;
+        }
+
+            header #alt-nav ul li a {
+                text-decoration: none;
+                color: grey;
+                display: block;
+            }
+
+                header #alt-nav ul li a:hover {
+                    color: purple;
+                }
+
+
+.sol {
+    float: left;
+    height: 420px;
+    width: 250px;
+    background-color: white;
+    margin-top: 0px;
+}
+.sag {
+    float: right;
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    margin-top: 0px;
+}
+
+.icerik {
+    float: left;
+    width: 740px;
+    height: 1000px;
+    margin-top: 0px;
+    margin-left: 30px;
+    background-color: white;
+}
+
+ol {
+    background: white;
+    padding: 20px;
+}
+
+    ol li {
+        background: #f9e6ff;
+        padding: 5px;
+        font-size: 30px;
+        margin-left: 35px;
+    }
+   
+#harfBaşlık{
+    padding-left: 135px;
+}
+#aramaBaşlık{
+    padding-left: 170px;
+}
+.ilaçAdı {
+    width: 80%;
+    display: inline-block;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: purple;
+    margin-top: 10px;
+    text-align: center;
+    
+    
+}
+h2, h3{
+    margin-top: 10px;
+    color: purple;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 5px;
+    margin-top: 2000px;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+}
+

@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="b.master.cs" Inherits="İlacim.b" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="wrapper">
+            <header>
+                <div class="logo" >
+                    <ul>
+                        <li>
+                    <a href="index.aspx">
+                    ilacım
+                        </a>
+                            </li>
+                        </ul>
+
+                </div>
+
+                
+               
+                <div class="arama-wrap">
+
+                    <asp:TextBox ID="txtArama" CssClass="txtArama" runat="server"  placeholder="ilaç adı, kategori(tansiyon vb.)"/>
+                    <asp:Button ID="butonArama" CssClass="butonArama" Text="Ara" runat="server" OnClick="butonArama_Click"/>
+                </div>
+
+                <nav id="alt-nav">
+
+                 <ul>
+                    <li><a href="a.aspx">A</a></li>
+                    <li><a href="b.aspx">B</a></li>
+                    <li><a>C</a></li>
+                    <li><a>D</a></li>
+                    <li><a>E</a></li>
+                    <li><a>F</a></li>
+                    <li><a>G</a></li>
+                    <li><a>H</a></li>
+                    <li><a>I</a></li>
+                    <li><a>J</a></li>
+                    <li><a>K</a></li>
+                    <li><a>L</a></li>
+                    <li><a>M</a></li>
+                    <li><a>N</a></li>
+                    <li><a>O</a></li>
+                    <li><a>P</a></li>
+                    <li><a>Q</a></li>
+                    <li><a>R</a></li>
+                    <li><a>S</a></li>
+                    <li><a>T</a></li>
+                    <li><a>U</a></li>
+                    <li><a>V</a></li>
+                    <li><a>W</a></li>
+                    <li><a>X</a></li>
+                    <li><a>Y</a></li>
+                    <li><a>Z</a></li>                        
+                    
+                          
+
+               
+              </ul>
+
+
+                </nav>
+            </header>
+            
+           <div id="banner" class="banner">
+               <div id="sol-taraf" class="sol">
+                    <a href="https://saglik.gov.tr/">
+                       <img src="NewFolder1/virüs.jpeg" width="250" height="450"/>
+                     </a>
+
+                   
+                </div>
+                
+                           
+                
+               <div class="sag">
+                   
+                   <a href="https://saglik.gov.tr/">
+                       <img src="NewFolder1/sağlık.png" width="250" height="450"/>
+                     </a>
+                     
+                 </div>
+                       
+                           
+                
+               <div class="icerik">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       </asp:ContentPlaceHolder>
+                     
+                       <div class="ilaclar"> <a id="harfBaşlık" style="font-size:xx-large">B Harfi İle Başlayan İlaçlar</a>
+                           <asp:ListView ID="ilaclar" runat="server">
+                               <ItemTemplate>
+                                   <div class="ilaclar">
+                                       <a>
+                                       <div class="ilaçAdı">
+                                           <a href="prospektüs.aspx?ilaçAdı=<%#Eval("ilaçAdı") %>">
+                                           <asp:Label CssClass="ilaçAdı" Text='<%#Eval("ilaçAdı") %>' runat="server"></asp:Label>
+                                               </a>
+                                       </div>
+                                            
+                                       </a>
+                                   </div>
+                               </ItemTemplate>
+                           </asp:ListView>
+
+                       </div>
+                   
+                  
+                   
+
+               </div>
+                       
+               </div>
+               
+               
+                 
+               
+               
+            <footer class="footer"></footer>
+
+        </div>
+           
+    </form>
+</body>
+</html>

@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="prospektüs.master.cs" Inherits="İlacim.prospektüs" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div id="wrapper">
+            <header>
+                <div class="logo" >
+                    <ul>
+                        <li>
+                    <a href="index.aspx">
+                    ilacım
+                        </a>
+                            </li>
+                        </ul>
+
+                </div>
+
+                
+               
+                <div class="arama-wrap">
+
+                    <asp:TextBox ID="txtArama" CssClass="txtArama" runat="server"  placeholder="ilaç adı, kategori(tansiyon vb.)"/>
+                    <asp:Button ID="butonArama" CssClass="butonArama" Text="Ara" runat="server" OnClick="butonArama_Click"/>
+                </div>
+
+                <nav id="alt-nav">
+
+                 <ul>
+                    <li><a href="a.aspx">A</a></li>
+                    <li><a href="b.aspx">B</a></li>
+                    <li><a>C</a></li>
+                    <li><a>D</a></li>
+                    <li><a>E</a></li>
+                    <li><a>F</a></li>
+                    <li><a>G</a></li>
+                    <li><a>H</a></li>
+                    <li><a>I</a></li>
+                    <li><a>J</a></li>
+                    <li><a>K</a></li>
+                    <li><a>L</a></li>
+                    <li><a>M</a></li>
+                    <li><a>N</a></li>
+                    <li><a>O</a></li>
+                    <li><a>P</a></li>
+                    <li><a>Q</a></li>
+                    <li><a>R</a></li>
+                    <li><a>S</a></li>
+                    <li><a>T</a></li>
+                    <li><a>U</a></li>
+                    <li><a>V</a></li>
+                    <li><a>W</a></li>
+                    <li><a>X</a></li>
+                    <li><a>Y</a></li>
+                    <li><a>Z</a></li>                        
+                    
+                          
+
+               
+              </ul>
+
+
+                </nav>
+            </header>
+            
+           <div id="banner" class="banner">
+               <div id="sol-taraf" class="sol">
+                   <div class="ilaclar">
+                           <asp:ListView ID="sol" runat="server">
+                               <ItemTemplate>
+                                   <div class="ilaclar">
+                                       <a>
+                                       <div class="etkenMadde"> <h3>İlacın Etken Maddesi</h3>
+                                           
+                                           <asp:Label CssClass="etkenMadde" Font-Size="Larger" Text='<%#Eval("etkenMadde") %>' runat="server"></asp:Label>
+                                              
+                                       </div>
+                                            <div class="ilaçF"> <h3>İlaç Fiyatı</h3>
+                                          
+                                           <asp:Label CssClass="ilaçF" Font-size="Larger" Text='<%#Eval("ilaçFiyatı") %>' runat="server"></asp:Label>
+                                              
+                                       </div>
+                                            <div class="firma"> <h3>İlacın Firması </h3>
+                                          
+                                           <asp:Label CssClass="firma" Font-size="Larger" Text='<%#Eval("firmaAdı") %>' runat="server"></asp:Label>
+                                              
+                                       </div> <div class="firmaB">
+                                          
+                                           <asp:Label CssClass="firmaB" Font-size="Larger" Text='<%#Eval("firmaBilgi") %>' runat="server"></asp:Label>
+                                              
+                                       </div>
+                                            
+                                       </a>
+                                   </div>
+                               </ItemTemplate>
+                           </asp:ListView>
+
+                       </div>
+                   
+                    
+                   
+                </div>
+                
+                           
+                
+               <div class="sag">
+                   
+
+                     
+                 </div>
+                       
+                           
+                
+               <div class="icerik">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       </asp:ContentPlaceHolder>
+                     
+                       <div class="ilaclar"> <a style="font-size:xx-large"></a>
+                           <asp:ListView ID="ilaclar" runat="server">
+                               <ItemTemplate>
+                                   <div class="image">
+                               <asp:Image ID="image" CssClass="image" width="500px" Height="500px" ImageUrl='<%#Eval("resim") %>' runat="server"></asp:Image>
+                                   </div>
+                                   <div class="ilaçAd"> 
+                               <asp:Label ID="ilaçAd" Font-size="Larger" Text='<%#Eval("ilaçAdı") %>' runat="server"></asp:Label>
+                                   </div>
+                                   
+                               <div class="nedir"> <h2>Nedir?</h2>
+                               <asp:Label ID="nedir" Font-size="Larger" Text='<%#Eval("nedir") %>' runat="server"></asp:Label>
+                                   </div>
+                               <div class="kullanımAçıklama"> <h2>Nasıl Kullanılır?</h2>
+                               <asp:Label ID="kullanımAçıklama" Font-size="Larger" Text='<%#Eval("kullanımAçıklama") %>' runat="server"></asp:Label>
+                                   </div>
+                           <div class="uygulamaYolu"> <h3>Uygulama Yolu</h3>
+                               <asp:Label ID="uygulamaYolu" Font-size="Larger" Text='<%#Eval("uygulamaYolu") %>' runat="server"></asp:Label>
+                                   </div>
+                                    <div class="yetişkinler"> <h3>Yetişlinler Nasıl Kullanmalı?</h3>
+                               <asp:Label ID="yetişkinler" Font-size="Larger" Text='<%#Eval("yetişkinler") %>' runat="server"></asp:Label>
+                                   </div>
+                               <div class="yaşlılar"> <h3>Yaşlılar Nasıl Kullanmalı?</h3>
+                               <asp:Label ID="yaşlılar" Font-size="Larger" Text='<%#Eval("yaşlılar") %>' runat="server"></asp:Label>
+                                   </div>
+                           <div class="çocuklar"> <h3>Çocuklar Nasıl Kullanmalı?</h3>
+                               <asp:Label ID="çocuklar" Font-size="Larger" Text='<%#Eval("çocuklar") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="öKullanım"> <h3>Özel Kullanım Durumları</h3>
+                               <asp:Label ID="öKullanım" Font-size="Larger" Text='<%#Eval("özelKullanımDurumları") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="fDoz"> <h3>Gerekenden Fazla Doz Alınırsa</h3>
+                               <asp:Label ID="fDoz" Font-size="Larger" Text='<%#Eval("fazlaDoz") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="kUnutulursa"> <h3>Kullanım Unutulursa</h3>
+                               <asp:Label ID="kUnutulursa" Font-size="Larger" Text='<%#Eval("kullanımUnutulursa") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="yanEtki"> <h2>Yan Etkiler</h2>
+                               <asp:Label ID="yanEtki" Font-size="Larger" Text='<%#Eval("yanEtkiAçıklama") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="yaygın"> <h3>Yaygın </h3>
+                               <asp:Label ID="yaygın" Font-size="Larger" Text='<%#Eval("yaygın") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="yaygınO"> <h3>Yaygın Olmayan</h3>
+                               <asp:Label ID="yaygınOlmayan" Font-size="Larger" Text='<%#Eval("yaygınOlmayan") %>' runat="server"></asp:Label>
+                                   </div>
+                                   <div class="seyrek"> <h3>Seyrek</h3> 
+                               <asp:Label ID="seyrek" Font-size="Larger" Text='<%#Eval("seyrek") %>' runat="server"></asp:Label>
+                                   </div>
+
+
+
+
+                               </ItemTemplate>
+                           </asp:ListView>
+
+                       </div>
+                   
+                  
+                   
+
+               </div>
+                       
+               </div>
+               
+               
+                 
+               
+               
+            <footer class="footer"></footer>
+
+        </div>
+    </form>
+</body>
+</html>

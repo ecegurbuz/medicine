@@ -1,0 +1,14 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\bin\İlacim.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\bin\İlacim.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\bin\İlacim.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\obj\Debug\İlacim.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\obj\Debug\İlacim.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\obj\Debug\İlacim.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\İlacim\İlacim\obj\Debug\İlacim.csprojAssemblyReference.cache
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\bin\İlacim.dll.config
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\bin\İlacim.dll
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\bin\İlacim.pdb
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\obj\Debug\İlacim.csprojAssemblyReference.cache
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\obj\Debug\İlacim.csproj.CoreCompileInputs.cache
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\obj\Debug\İlacim.dll
+C:\Users\cigde\OneDrive\Masaüstü\ÇİĞDEM_BİRCAN_18253016-ECE_GÜRBÜZ_18253502\İlacim\İlacim\obj\Debug\İlacim.pdb
